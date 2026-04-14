@@ -6,15 +6,16 @@
 #   - 'readings': lista con las temperaturas de cada lectura (list)
 #   - 'total':    suma total de todas las temperaturas (float)
 
-
 def init(max_readings):
-    max_readings = {}
-    max_readings["max"] = int()
-    max_readings["readings"] == [] 
-    max_readings["total"] = float()
-    return max_readings
+    with open(max_readings, "r") as miArchivo:
+        print(miArchivo.read()) 
+    diccionario = {}
+    diccionario["max"] = int()
+    diccionario["readings"] == [] 
+    diccionario["total"] = float()
+    return diccionario
     # TODO: Implementar
-
+    pass
 
 def add_reading(monitor, temp):
     max_readings[monitor] = temp
