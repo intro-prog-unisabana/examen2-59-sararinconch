@@ -6,38 +6,37 @@
 #   - 'readings': lista con las temperaturas de cada lectura (list)
 #   - 'total':    suma total de todas las temperaturas (float)
 
-def init(max_readings):
-    max_readings = 2 
-    diccionario = {max_readings}
-    diccionario["max"] = int()
-    diccionario["readings"] == [] 
-    diccionario["total"] = float()
+def init(max_readings, diccionario):
+    max_readings = 3 
+    diccionario = {}
+    diccionario["max"] = max_readings
+    temp_lecturas = []
+    diccionario["readings"] = temp_lecturas
+    diccionario["total"] = sum(temp_lecturas)
     return diccionario
     # TODO: Implementar
     pass
 
 
-def add_reading(monitor, temp):
-    diccionario_2 = {}
-    diccionario_2[monitor] = temp
-    return diccionario_2
+def add_reading(monitor, temp, diccionario):
+    diccionario[monitor] = temp
+    return diccionario
     # TODO: Implementar
     pass
 
-
-
-def count(monitor):
-    """
-    Retorna el numero de lecturas agregadas.
-    """
+def count(monitor, diccionario):
+    claves = diccionario.keys()
+    n_lecturas = len(claves)
+    return n_lecturas
     # TODO: Implementar
     pass
 
 
 def average_temp(monitor):
-    """
-    Retorna la temperatura promedio de todas las lecturas.
-    """
+    
+    for temp in lecturas:
+        promedio = sum(temp)/len(temp)
+
     # TODO: Implementar
     pass
 
