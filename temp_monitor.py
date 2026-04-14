@@ -8,20 +8,20 @@
 
 
 def init(max_readings):
-    """
-    Crea y retorna un diccionario para almacenar hasta max_readings lecturas.
-    """
+    max_readings = {}
+    max_readings["max"] = int()
+    max_readings["readings"] = [] 
+    max_readings["total"] = float()
+    return max_readings
     # TODO: Implementar
     pass
-
 
 def add_reading(monitor, temp):
-    """
-    Agrega una nueva lectura con la temperatura especificada.
-    Retorna el diccionario modificado.
-    """
+    max_readings[monitor] = temp
+    return max_readings
     # TODO: Implementar
     pass
+
 
 
 def count(monitor):
