@@ -9,12 +9,12 @@
 
 def init(max_readings):
     max_readings = {}
-    max_readings['monitor'] == int("3")
-    max_readings['readings'] == [] 
-    max_readings['total'] == float("2")
+    max_readings["max"] = int()
+    max_readings["readings"] == [] 
+    max_readings["total"] = float()
     return max_readings
     # TODO: Implementar
-    pass
+
 
 def add_reading(monitor, temp):
     max_readings[monitor] = temp
