@@ -7,9 +7,8 @@
 #   - 'total':    suma total de todas las temperaturas (float)
 
 def init(max_readings):
-    with open(max_readings, "r") as miArchivo:
-        print(miArchivo.read()) 
-    diccionario = {}
+    max_readings = 2 
+    diccionario = {max_readings}
     diccionario["max"] = int()
     diccionario["readings"] == [] 
     diccionario["total"] = float()
@@ -17,9 +16,11 @@ def init(max_readings):
     # TODO: Implementar
     pass
 
+
 def add_reading(monitor, temp):
-    max_readings[monitor] = temp
-    return max_readings
+    diccionario_2 = {}
+    diccionario_2[monitor] = temp
+    return diccionario_2
     # TODO: Implementar
     pass
 
