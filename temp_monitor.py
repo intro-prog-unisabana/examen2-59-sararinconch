@@ -9,9 +9,9 @@
 
 def init(max_readings):
     max_readings = {}
-    max_readings["max"] == int()
-    max_readings["readings"] == [] 
-    max_readings["total"] == float()
+    max_readings['max'] == int()
+    max_readings['readings'] == [] 
+    max_readings['total'] == float()
     return max_readings
     # TODO: Implementar
     pass
